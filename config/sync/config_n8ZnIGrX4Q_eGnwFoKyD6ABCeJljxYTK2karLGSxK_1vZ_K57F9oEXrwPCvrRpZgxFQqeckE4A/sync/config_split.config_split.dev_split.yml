@@ -1,0 +1,21 @@
+uuid: f1f26fe6-745c-4798-ab9f-4babb426b6c3
+langcode: en
+status: false
+dependencies: {  }
+id: dev_split
+label: 'Dev Split'
+description: ''
+weight: 0
+stackable: false
+no_patching: false
+storage: folder
+folder: ../config/development
+module:
+  dblog: 0
+  field_ui: 0
+  update: 0
+  views_ui: 0
+theme: {  }
+complete_list:
+  - dblog.settings
+partial_list: {  }

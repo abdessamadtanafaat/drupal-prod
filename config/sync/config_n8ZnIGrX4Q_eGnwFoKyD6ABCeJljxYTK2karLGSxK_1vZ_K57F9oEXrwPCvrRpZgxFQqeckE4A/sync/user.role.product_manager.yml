@@ -1,0 +1,29 @@
+uuid: fba8a9d0-e903-4af8-a1cb-07ef7aa0a3a8
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.product
+    - taxonomy.vocabulary.product_categories
+  module:
+    - node
+    - taxonomy
+id: product_manager
+label: 'Product Manager'
+weight: 4
+is_admin: false
+permissions:
+  - 'create product content'
+  - 'create terms in product_categories'
+  - 'delete any product content'
+  - 'delete own product content'
+  - 'delete product revisions'
+  - 'delete term revisions in product_categories'
+  - 'delete terms in product_categories'
+  - 'edit any product content'
+  - 'edit own product content'
+  - 'edit terms in product_categories'
+  - 'revert product revisions'
+  - 'revert term revisions in product_categories'
+  - 'view product revisions'
+  - 'view term revisions in product_categories'
