@@ -1,0 +1,11 @@
+name: 'Product Categories'
+type: module
+core_version_requirement: '^10.3 || ^11'
+dependencies:
+  - 'drupal:field'
+  - 'drupal:menu_ui'
+  - 'drupal:node'
+  - 'drupal:path'
+  - 'drupal:taxonomy'
+  - 'drupal:text'
+  - 'drupal:user'

@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.product
+    - taxonomy.vocabulary.product_categories
+  module:
+    - node
+    - taxonomy
+id: product_manager
+label: 'Product Manager'
+weight: 4
+is_admin: false

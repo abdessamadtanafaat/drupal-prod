@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cc03f7d4b55ce82b50b812a4318cbedc",
+    "content-hash": "f860230cf7e340b3576f5eb540536f74",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1164,6 +1164,58 @@
             }
         },
         {
+            "name": "drupal/config_update",
+            "version": "2.0.0-alpha4",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/config_update.git",
+                "reference": "2.0.0-alpha4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/config_update-2.0.0-alpha4.zip",
+                "reference": "2.0.0-alpha4",
+                "shasum": "d8ea528b0b3e24918356bb72bef61408f650aa8e"
+            },
+            "require": {
+                "drupal/core": "^9.4 || ^10 || ^11"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.0-alpha4",
+                    "datestamp": "1724596931",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Alpha releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "codebymikey",
+                    "homepage": "https://www.drupal.org/user/3573206"
+                },
+                {
+                    "name": "pasqualle",
+                    "homepage": "https://www.drupal.org/user/80733"
+                },
+                {
+                    "name": "vishalkhode",
+                    "homepage": "https://www.drupal.org/user/2439156"
+                }
+            ],
+            "description": "Provides basic revert and update functionality for other modules.",
+            "homepage": "https://www.drupal.org/project/config_update",
+            "support": {
+                "source": "https://git.drupalcode.org/project/config_update"
+            }
+        },
+        {
             "name": "drupal/core",
             "version": "11.1.4",
             "source": {
@@ -1492,6 +1544,33 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Core and its dependencies with known-compatible minor versions. Require this project INSTEAD OF drupal/core."
+        },
+        {
+            "name": "drupal/features",
+            "version": "dev-3447460-drupal-11-compatibility",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/issue/features-3447460.git",
+                "reference": "40732dfd317473d9913c9e97d0cf7e4d68a78934"
+            },
+            "require": {
+                "drupal/config_update": "^1.4 || ^2",
+                "drupal/core": "^9.4 || ^10 || ^11"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^10 || ^11"
+                    }
+                }
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "Enables administrators to package configuration into modules",
+            "homepage": "https://www.drupal.org/project/features",
+            "time": "2024-11-22T15:25:36+00:00"
         },
         {
             "name": "drush/drush",
@@ -6357,7 +6436,10 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {},
+    "stability-flags": {
+        "drupal/config_update": 15,
+        "drupal/features": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {},
